@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #088F8F ;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #F0FFFF;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #00FFFF;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hello, My Name is Vina Rose</h1>
+  <p>Nice to meet you!</p>
+</div>
+
+<div class="topnav">
+  <a href="#">About Me</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Blog</a>
+  <a href="#" style="float:right">Contact Me</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>CAREER GOALS </h2>
+      <h5>I'm interested about pursuing a career in the IT industry.</h5>
+      <div class="fakeimg" style="max-width: 100%; height:200px;"><img scr=""></div>
+      <p>To learn programming is one of my goals.</p>
+      <p>Programming is challenging to me, but that doesn't stop me from learning and exploring more about programming.</p>
+    </div>
+    <div class="card">
+      <h2>CAREER PROFILE</h2>
+      <h5>Current Work and Affiliations</h5>
+      <div class="fakeimg" style="height:200px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZE7UBXusjB_JmpIAP8UQwqUuTa2DrxuV4ZqcmhLTOvny4_XCNJ1SWevE8252ceKLH-9g&usqp=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"></div>
+      <p>I'm currently a COS-Instructor at the University of Southern Mindanao, Kabacan, Cotabato.</p>
+      <p>I started teaching last August 2022, handling subjects including Calculus and Electronics-related subjects.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;"></div>
+      <p>I am 24 years old, currently residing at Dolo, Bansalan, Davao del Sur. I obtained my license as an electronics engineer last April 2022.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>LinkedIn: https://www.linkedin.com/in/vina-rose-alquizar/</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
